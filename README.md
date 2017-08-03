@@ -55,3 +55,9 @@ There's an experimental patch for windows in this [PR](https://github.com/udacit
 * The final hyperparameters were chosen by a combination of running a version of the twiddle algorithm and manual tuning. The twiddle algorithm functions like adaptive learning rate gradient descent for the three parameters P, I and D except that the increments don't depend on the actual gradient of a cost function w.r.t. the parameters. Instead the parameters are incremented/decremented at a certain time step by a predefined amount and after a certain settling time the impact on the error is estimated to evaluate whether the change in parameter lead to a lower error which is in turn followed by appropriate action. 
 
 * The "PID_twiddle.mp4" video shows the above described twiddle algorithm based PID controllers in which the parameters are constantly adjusted until they converge to a certain value by the end of the lap. At the next lap the twiddle algorithm is restarted. This procedure yielded some rough values which were further tweaked a bit manually to yield the costant values of the P, I and D components for both the steering and throttle controllers as shown in the first video. Please refer to the left terminal window in the videos to see current values of the parameters.
+
+
+**Videos**
+
+* [Twiddle](https://youtu.be/gkix5AbVKHM)
+* [Constant](https://youtu.be/UxB48SMWs6s)
